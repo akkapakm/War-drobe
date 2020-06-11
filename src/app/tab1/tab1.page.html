@@ -1,0 +1,118 @@
+<ion-header [translucent]="true">
+<style>.no-click{pointer-events: none;}</style>
+  <ion-toolbar color="primary">
+  <ion-buttons slot="end">
+    <ion-button>
+      <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-title>
+      寒哥の柜<ion-icon name="wifi"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+<ion-fab horizontal="end" vertical="bottom" slot="fixed" class="md fab-horizontal-end fab-vertical-bottom hydrated">
+        
+        
+
+        <ion-fab-button class="md ion-activatable ion-focusable hydrated">
+          <ion-icon name="add" role="img" class="md hydrated" aria-label="add"></ion-icon>
+        </ion-fab-button>
+        
+        <ion-fab-list side="top" class="md fab-list-side-top hydrated">
+        <!--collapse-->
+
+          <!--<ion-fab-button color="light" class="ion-color ion-color-light md fab-button-in-list ion-activatable ion-focusable hydrated">
+            <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook">拿衣服</ion-icon>
+          </ion-fab-button>
+        
+          <ion-fab-button color="light" class="ion-color ion-color-light md fab-button-in-list ion-activatable ion-focusable hydrated">
+            <ion-icon name="logo-twitter" role="img" class="md hydrated" aria-label="logo twitter">新衣服</ion-icon>
+          </ion-fab-button>-->
+          <section style="margin-right: 65%;">
+          <ion-button color="warning">新增衣物</ion-button>
+          <ion-button>获取衣物</ion-button>
+          </section>
+        </ion-fab-list>
+      </ion-fab>
+
+<ion-card>
+  <img src="assets/weather.jpeg"> <!-- 在card hearder上面的图片-->
+  <ion-card-header>
+    <ion-card-title>晚上好，肖寒</ion-card-title>
+    <ion-card-subtitle>天冷了，请注意保暖加衣</ion-card-subtitle>
+  
+  </ion-card-header>
+
+  <!--<ion-card-content>
+    哈哈，哈哈，哈哈哈哈哈。
+  </ion-card-content>-->
+</ion-card>
+<!-- 衣柜 quick facts-->
+<ion-card>
+
+<!-- Icon top -->
+<ion-segment class="no-click" value="">
+
+  <ion-segment-button class="" style="color:#ed576b" value="1">
+    <ion-label>27.3℃</ion-label>
+    <ion-icon name="thermometer"></ion-icon>
+  </ion-segment-button>
+  
+  <ion-segment-button class="" style="color:#3880ff" value="2">
+    <ion-label>41%</ion-label>
+    <ion-icon name="water"></ion-icon>
+  </ion-segment-button>
+
+  <ion-segment-button class="" style="color:#ff9800c7" value="3">
+    <ion-label>31件</ion-label>
+    <ion-icon name="shirt"></ion-icon>
+  </ion-segment-button>
+
+</ion-segment>
+
+
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label>Canada Goose 保暖外套</ion-label>
+    <ion-button fill="outline" slot="end">取出</ion-button>
+  </ion-item>
+
+  <ion-card-content>
+    你可能要出门
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+ <ion-item href="#">
+    <ion-icon name="wine" slot="start"></ion-icon>
+    <ion-label>晚宴的礼服 已准备好</ion-label>
+    <ion-button fill="outline" slot="end">取出</ion-button>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item href="#" class="ion-activated">
+    <ion-icon name="wifi" slot="start"></ion-icon>
+    <ion-label>Staff-5G</ion-label>
+    <ion-button fill="outline" color="success" slot="end">点击检测</ion-button>
+  </ion-item>
+
+  
+
+  <ion-item class="ion-activated">
+    <ion-icon name="shield-checkmark" slot="start"></ion-icon>
+    <ion-label>衣柜工作正常</ion-label>
+  </ion-item>
+
+ 
+</ion-card>
+
+</ion-content>
